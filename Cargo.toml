@@ -72,18 +72,7 @@ members = [
     "src/query/storages/parquet",
     "src/query/storages/result_cache",
     "src/query/users",
-    "src/query/ee_features/attach_table",
-    "src/query/ee_features/vacuum_handler",
-    "src/query/ee_features/background_service",
-    "src/query/ee_features/aggregating_index",
-    "src/query/ee_features/data_mask",
-    "src/query/ee_features/storage_encryption",
-    "src/query/ee_features/stream_handler",
-    "src/query/ee_features/storage_quota",
-    "src/query/ee_features/inverted_index",
-    "src/query/ee_features/virtual_column",
     "src/query/service",
-    "src/query/ee",
     "src/meta/api",
     "src/meta/app",
     "src/meta/binaries",
@@ -96,7 +85,6 @@ members = [
     "src/meta/stoerr",
     "src/meta/store",
     "src/meta/types",
-    "src/meta/ee",
     "src/meta/proto-conv",
     "src/meta/protos",
     "src/meta/service",
@@ -176,19 +164,6 @@ databend-common-storages-view = { path = "src/query/storages/view" }
 databend-common-tracing = { path = "src/common/tracing" }
 databend-common-users = { path = "src/query/users" }
 databend-common-vector = { path = "src/common/vector" }
-databend-enterprise-aggregating-index = { path = "src/query/ee_features/aggregating_index" }
-databend-enterprise-attach-table = { path = "src/query/ee_features/attach_table" }
-databend-enterprise-background-service = { path = "src/query/ee_features/background_service" }
-databend-enterprise-data-mask-feature = { path = "src/query/ee_features/data_mask" }
-databend-enterprise-fail-safe = { path = "src/query/ee_features/fail_safe" }
-databend-enterprise-inverted-index = { path = "src/query/ee_features/inverted_index" }
-databend-enterprise-meta = { path = "src/meta/ee" }
-databend-enterprise-query = { path = "src/query/ee" }
-databend-enterprise-storage-encryption = { path = "src/query/ee_features/storage_encryption" }
-databend-enterprise-storage-quota = { path = "src/query/ee_features/storage_quota" }
-databend-enterprise-stream-handler = { path = "src/query/ee_features/stream_handler" }
-databend-enterprise-vacuum-handler = { path = "src/query/ee_features/vacuum_handler" }
-databend-enterprise-virtual-column = { path = "src/query/ee_features/virtual_column" }
 databend-meta = { path = "src/meta/service" }
 databend-query = { path = "src/query/service" }
 databend-sqllogictests = { path = "tests/sqllogictests" }

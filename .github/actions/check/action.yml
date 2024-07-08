@@ -15,11 +15,6 @@ runs:
     - name: Check Apache License Header
       uses: korandoru/hawkeye@v2
 
-    - name: Check Elastic License Header
-      uses: korandoru/hawkeye@v2
-      with:
-        config: licenserc-ee.toml
-
     - name: YAML Lint
       shell: bash
       run: make lint-yaml

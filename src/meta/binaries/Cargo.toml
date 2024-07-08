@@ -51,12 +51,6 @@ tokio-stream = { workspace = true }
 url = "2.3.1"
 
 [[bin]]
-name = "databend-meta"
-path = "meta/ee_main.rs"
-doctest = false
-test = false
-
-[[bin]]
 name = "databend-meta-oss"
 path = "meta/oss_main.rs"
 doctest = false

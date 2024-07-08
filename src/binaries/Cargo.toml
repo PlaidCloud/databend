@@ -43,12 +43,6 @@ serfig = { workspace = true }
 tokio = { workspace = true }
 
 [[bin]]
-name = "databend-query"
-path = "query/ee_main.rs"
-doctest = false
-test = false
-
-[[bin]]
 name = "databend-query-oss"
 path = "query/oss_main.rs"
 doctest = false

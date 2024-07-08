@@ -36,8 +36,7 @@ lint-yaml:
 	yamllint -f auto .
 
 check-license:
-	docker run -it --rm -v $(CURDIR):/github/workspace ghcr.io/korandoru/hawkeye-native:v2 check --config licenserc.toml && \
-	docker run -it --rm -v $(CURDIR):/github/workspace ghcr.io/korandoru/hawkeye-native:v2 check --config licenserc-ee.toml
+	docker run -it --rm -v $(CURDIR):/github/workspace ghcr.io/korandoru/hawkeye-native:v2 check --config licenserc.toml
 
 run: build-release
 	BUILD_PROFILE=release bash ./scripts/ci/deploy/databend-query-standalone.sh
