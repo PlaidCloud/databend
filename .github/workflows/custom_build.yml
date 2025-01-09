@@ -20,6 +20,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
+          registry: us-docker.pkg.dev
           username: _json_key
           password: ${{ secrets.GCR_JSON_KEY }}
 
