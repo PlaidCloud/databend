@@ -55,4 +55,4 @@ jobs:
             us-docker.pkg.dev/plaidcloud-build/us-plaidcloud/databend:${{ steps.docker_tag.outputs.tag }}
           context: ./scripts/setup
           file: ./docker/build-tool/debian/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
